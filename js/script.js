@@ -20,11 +20,24 @@ function randomParagraph() {
 function initTyping() {
     const characters = typingText.querySelectorAll("span")
     let typedChar = inpField.value.split("")[charIndex];
-    if (character[charIndex] === typedChar) {
-        console.log("correct");
+    if (typedChar == null) {
+        //if user hasn't entered any character or pressed backspace
+        charIndex--;
+        characters[charIndex].classList.remove("correct", "incorrect");
     } else {
-        console.log("incorrect");
+        if (characters[charIndex].innerText === typedChar) {
+            // if user typed character and shown character matched then add the
+            // correct class else add the incorrect class
+            characters[charIndex].classList.add("correct");
+        } else {
+            characters[charIndex].classList.add("incorrect");
+        }
+        charIndex++; // increment charIndex either user typed correct or incorrect character
     }
+
+
+    characters.forEach(span => span.classList.remove("active"));
+    characters[charIndex].classList.add("active");
 }
 
 randomParagraph();
