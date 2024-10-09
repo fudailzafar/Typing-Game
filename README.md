@@ -10,6 +10,16 @@ This is a fun and interactive typing speed game. The game measures your typing s
 - **Reset Functionality**: Users can restart the game with the "Try Again" button.
 - **Timer**: Users have 60 seconds to complete the game.
 
+## Project Structure
+
+```bash
+├── index.html       # Main HTML file
+├── style.css        # CSS file for styling
+└── js
+    ├── paragraph.js # Array of random paragraphs for typing test
+    └── script.js    # Logic for the game (timing, mistakes, etc.)
+```
+
 ## How to Run
 
 1. Clone this repository:
@@ -25,16 +35,6 @@ This is a fun and interactive typing speed game. The game measures your typing s
 3. Open `index.html` in your web browser:
    - Right-click `index.html` and open it with your favorite browser.
    - Or, if you have a local web server, start the server and view the game.
-
-## Project Structure
-
-```bash
-├── index.html       # Main HTML file
-├── style.css        # CSS file for styling
-└── js
-    ├── paragraph.js # Array of random paragraphs for typing test
-    └── script.js    # Logic for the game (timing, mistakes, etc.)
-```
 
 ## Game Instructions
 
