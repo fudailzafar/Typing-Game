@@ -148,18 +148,3 @@ body {
 .result-details li b {
     font-weight: 500;
 }
-
-.Skillify {
-    color: black;
-    background-color: red;
-    border-radius: 15px;
-    padding: 10px;
-    margin-left: 10px;
-    cursor: pointer;
-}
-
-#hyper {
-    color: white;
-    font-size: 14px;
-    text-decoration: none;
-}
